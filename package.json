@@ -5,10 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:watch": "vue-cli-service build --watch",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "core-js": "^3.6.5",
+    "feed-reader": "^5.0.0-rc3",
+    "jsdom": "^19.0.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {
