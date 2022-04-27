@@ -4,6 +4,7 @@
         <div class="nyhet" v-for="(nyhet, id) in nyheter" :key="id">
             <h4>{{nyhet.title}}</h4>
             <p>{{nyhet.description}}</p>
+            <a :href="nyhet.link" target="_blank">Les mer ...</a>
         </div>
     </div>
 </template>

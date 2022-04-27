@@ -1,5 +1,6 @@
 <template>
     <div class="ver">
+        <h3>Vær for Jørstadmoen</h3>
         <div class="time" v-for="(time, id) in timefortime" :key="id">
             <span>{{time.klokkeslett}}</span>
             <img :src="'weathericons/' + time.ikon + '.png'" alt="">
@@ -42,6 +43,10 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+    width: 100%;
+    text-align: center;
+}
 .ver {
     display: flex;
     justify-content: space-around;

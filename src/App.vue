@@ -4,8 +4,7 @@
       <div class="flex-v">
         <Klokke />
         <Ver />
-        <Messa />
-        <!-- <iframe src="https://meny.cissky.net/maned.php" style="height: 50vh; border-radius: 20px;" frameborder="0"></iframe> -->
+        <iframe src="https://meny.cissky.net/maned.php" style="height: 50vh; border-radius: 20px;" frameborder="0"></iframe>
       </div>
       <div class="flex-v">
         <iframe src="https://www.youtube.com/embed/36YnV9STBqc" frameborder="0"></iframe>
@@ -23,14 +22,14 @@
 import Klokke from './components/Klokke.vue';
 import Nyheter from './components/Nyheter.vue';
 import Ver from './components/Ver.vue';
-import Messa from './components/Messa.vue';
+// import Messa from './components/Messa.vue';
 
 export default {
     components: {
         Klokke,
         Nyheter,
-        Ver,
-        Messa
+        Ver
+        // Messa
     }
 };
 </script>
