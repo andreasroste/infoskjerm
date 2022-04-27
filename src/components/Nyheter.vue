@@ -37,6 +37,9 @@ h4,p {
     padding: 20px;
     border-radius: 10px;
 }
+a {
+    color: #aaa;
+}
 </style>
 
 <script>
