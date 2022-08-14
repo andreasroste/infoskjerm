@@ -34,13 +34,13 @@ export default {
             klokka: "",
             dato: "",
             maneder: ["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"],
-            dager: ["mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag", "søndag"]
+            dager: ["søndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag"]
         }
     },
     mounted() {
         let vm = this;
         vm.klokka = (new Date()).toTimeString().substr(0,5);
-        vm.dato = vm.dager[(new Date()).getDay()-1] + " " + (new Date()).getDate() + ". " + vm.maneder[(new Date()).getUTCMonth()] + " " + (new Date()).getFullYear();
+        vm.dato = vm.dager[(new Date()).getDay()] + " " + (new Date()).getDate() + ". " + vm.maneder[(new Date()).getUTCMonth()] + " " + (new Date()).getFullYear();
         setInterval(() => {
             vm.klokka = (new Date()).toTimeString().substr(0,5);
         }, 5000);

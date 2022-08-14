@@ -53,11 +53,11 @@ export default {
         }
     },
     mounted() {
-        read("https://forsvaretsforum.no/?lab_viewport=rss").then((feed) => {
+        read("https://www.nrk.no/toppsaker.rss").then((feed) => {
             this.nyheter = feed.entries.slice(0,7);
         });
         setInterval(() => {
-            read("https://forsvaretsforum.no/?lab_viewport=rss").then((feed) => {
+            read("https://www.nrk.no/toppsaker.rss").then((feed) => {
                 this.nyheter = feed.entries.slice(0,7);
             });
         }, 60000);
